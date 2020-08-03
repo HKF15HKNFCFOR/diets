@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://diets.gq/sitemap.xml
+Host: diets.gq
