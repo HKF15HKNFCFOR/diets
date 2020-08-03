@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>ИМТ</title>
+    <meta name="description" content="Все что нужно для похудения! Различные диеты, схемы питания и многое другое. Есть несколькой онлайн калькуляторов для подсчета ИМТ и калорий." />
+    <meta name="keywords" content="Диета, индекс массы тела, правильное питание, худей, схемы питания, ЗОЖ, калории, онлайн калькулятор">
+    <meta name="robots" content="index, follow">
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles/app.css"/>
+    <script defer src="scripts/bmi.js"></script>
+  </head>
+  <body>
+    <div class="one"><h1>Худей с улыбкой!</h1></div>
+<div class="menu">
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="bmi.html">Рассчитать ИМТ</a></li>
+		<li><a href="calories.html">Счетчик калорий</a></li>
+		<li><a href="food.html">Правильное питание</a></li>
+	</ul>
+</div>
+    <div class="main">
+      <div class="all">
+        <h2 class="razdel">
+        Индекс Массы Тела
+        </h2>
+ <hr class="hr-circle">
+        <p class="textm">
+ <strong>ИМТ</strong> – индекс массы тела – отражает состояние здоровья человека. Показатель этот зависит от жировых ресурсов организма и может соответствовать норме, быть избыточным либо дефицитным. У многих людей индекс массы тела далек от оптимального. Недаром ИМТ появился в медицинских картах как ключевой фактор риска заболеваемости и стал учитываться при диагностике.
+        </p>
+        <!--ads-->
+        <!--ads-->
+        <p class="content-main">Для чего нужем ИМТ?</p>
+        <p class="content-text">
+По данным ВОЗ половина людей на планете умирает сегодня не от опасных инфекций, как в прошлые эпохи. Главными врагами человека стали фастфудное питание, переедание, стрессы, «сидячий» труд и «диванный» досуг.</p>
+
+<p class="content-text">Выросла уже целая генерация людей, страдающих от ожирения и обреченных на сахарный диабет 2 типа, сердечно-сосудистые заболевания, остеохондроз и многие другие опасные недуги. Бессимптомный период этих патологий может затянуться на годы, в течение которых медленно, но верно будут подтачиваться силы организма. О разрушительной деятельности затаившейся болезни и предупредит повышенный индекс массы тела.</p>
+<p class="content-text">
+  В свою очередь, пониженный ИМТ просигнализирует о другом отклонении от нормы – болезненном истощении человека. Такое состояние тоже должно вызвать озабоченность. Организм с недостаточной массой жировых отложений не способен нормально справляться со своими функциями и противостоять болезням. Дефицит жировой ткани может быть признаком сахарного диабета 1 типа, остеопороза, нарушения пищеварения, проблем с дыханием или психикой.</p>
+<p class="content-text">
+В любом случае индекс массы тела позволит вам вовремя спохватиться и заняться восстановлением физической формы. Конечно, на пути к совершенству потребуется взять себя в руки, избавиться от дурных привычек, пожертвовать губительными пристрастиями. Однако овчинка выделки стоит, ведь на кону самое дорогое – ваша жизнь.
+        </p>
+<!--ads-->
+        <div class="application">  
+<h3 class="appname"><a name="diet3"></a>
+         Калькулятор ИМТ
+        </h3>
+            <div class="appl">  
+          <p class="content-special">
+            Ваш рост(см):<input type="number" id="height" placeholder="178">
+            
+              </p>
+          </div>
+<div class="appl">  
+          <p class="content-special">
+            Вес(кг):<input type="number" id="mass" placeholder="73">
+            
+          </p>
+          </div>
+          <br>
+ <div class="appc">  
+          <button class="button7" onclick="result()" >Рассчитать</button>
+          </div>
+          </div>
+ <div hidden id="rezbl" class="appc">  
+<h4 class="razdel">
+        Ваш ИМТ:
+        </h4>
+         <div class="rez">  
+  <p id="textrut" class="win">ui</p>
+        </div>
+<p id="textbig" class="razdel">
+        </p>
+      </div>
+ <p class="content-main">Формула расчета ИМТ</p>
+        <p class="content-text">
+Для того, чтобы узнать свой ИМТ необходимо лишь свой вес в килограммах  разделить на квадрат роста в метрах. Формула не учитывает пол и возраст человека, несмотря на то что ИМТ мужчин выше чем ИМТ женщин, а также ИМТ выше у людей среднего возраста, а у детей и пожилых людей этот показатель ниже. </p>
+        <!--ads-->
+        <!--ads-->
+<p class="content-main">Интерпретация показателей ИМТ:</p>
+        <table>
+<tr>
+  <th>ИМТ</th>
+  <th>Результат</th>
+  </tr>
+ <tr>
+  <td>16 и менее</td>
+  <td>Выраженный дефицит массы тела</td>
+ </tr>
+<tr>
+  <td>16—18,5</td>
+  <td>Недостаточная (дефицит) масса тела</td>
+</tr>
+          <tr>
+  <td>18,5—25</td>
+  <td>Норма</td>
+ </tr>
+<tr>
+  <td>25—30</td>
+  <td>Избыточная масса тела (предожирение)</td>
+ </tr>
+          <tr>
+  <td>30—35</td>
+  <td>Ожирение 1 степени</td>
+ </tr>
+<tr>
+  <td>35—40</td>
+  <td>Ожирение 2 степени</td>
+ </tr>
+          <tr>
+  <td>40 и более</td>
+  <td>Ожирение 3 степени</td>
+ </tr>
+        </table>
+   <!--ads-->
+        <p class="fig"><img src="styles/images/scale.png" 
+   width="40%" alt="Весы"></p>
+        <hr class="hr-circle">
+      </div>
+    </div>
+    
+   <footer>
+&copy; All rights reserved <strong>MikhaelLEE</strong> 2020
+</footer>
+  </body>
+</html>
+ 

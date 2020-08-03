@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Суточная норма калорий</title>
+    <meta name="description" content="Все что нужно для похудения! Различные диеты, схемы питания и многое другое. Есть несколькой онлайн калькуляторов для подсчета ИМТ и калорий." />
+    <meta name="keywords" content="Диета, индекс массы тела, правильное питание, худей, схемы питания, ЗОЖ, калории, онлайн калькулятор">
+    <meta name="robots" content="index, follow">
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles/app.css"/>
+    <script defer src="scripts/calories.js"></script>
+  </head>
+  <body>
+    <div class="one"><h1>Худей с улыбкой!</h1></div>
+<div class="menu">
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="bmi.html">Рассчитать ИМТ</a></li>
+		<li><a href="calories.html">Счетчик калорий</a></li>
+		<li><a href="food.html">Правильное питание</a></li>
+	</ul>
+</div>
+    <div class="main">
+      <div class="all">
+        <h2 class="razdel">
+        Суточная норма калорий
+        </h2>
+ <hr class="hr-circle">
+        <p class="textm">
+Если вы хотите узнать какое колличество калорий вам нужно потреблять в день, то предлгаем воспользоваться нашим калькулятором. Вычисление необходимого колличества калорий производится по формуле Миффлина-Сан Жеора.
+        </p>
+        <!--ads-->
+        <!--ads-->
+        <p class="content-main">Почему именно формула Маффлина?</p>
+        <p class="content-text">
+ Почему, вы спросите, среди многих других вам стоит остановить выбор на ней? Сегодня ADA (Американская ассоциация диетологов) признет её самой точной среди прочих. Ещё одна галочка к авторитетности, подтверждающая, что ей нужно доверять: она часто упоминается во многих докладах ВОЗ. На эту организацию ставят ориентир вся современная медицина.</p>
+
+<!--ads-->
+        <div class="application">  
+<h3 class="appname"><a name="diet3"></a>
+         Узнайте свою суточую норму калорий
+        </h3>
+            <div class="appc">  
+          <p class="content-special">
+            Ваш рост(см):<input type="number" id="height" placeholder="178">
+            
+              </p>
+          </div>
+<div class="appc">  
+          <p class="content-special">
+            Вес(кг):<input type="number" id="mass" placeholder="73">
+            
+          </p>
+          </div>
+          <div class="appc">   
+            <p class="content-special">
+            Возраст(полных лет):<input type="number" id="age" placeholder="20">
+            </p>
+          </div>
+<div class="appc">  
+          <p class="content-special">
+            Ваш пол:
+ <select id="pol">
+    <option value="" selected disabled hidden>- Выберите пол -</option>
+    <option value="5">Мужской</option>
+    <option value="161">Женский</option>
+              </select>
+              </p>
+          </div>
+         <div class="appc">  
+          <p class="content-special">
+            Ваша активность:
+ <select id="active">
+    <option value="" selected disabled hidden>- Степень физ. нагрузки -</option>
+    <option value="1.2">Нагрузка отсутствует или минимальна</option>
+    <option value="1.375">1-3 раза в неделю</option>
+    <option value="1.4625">4-5 раз в неделю</option>
+    <option value="1.550">Интенсивно 4-5 раз в неделю</option>
+    <option value="1.6375">Каждый день</option>
+    <option value="1.725">Каждый день интенсивно</option>
+    <option value="1.9">Тяжелая физическая работа</option>
+              </select>
+              </p> 
+          </div>
+           
+          <br>
+ <div class="appc">  
+          <button class="button7" onclick="result()" >Рассчитать</button>
+          </div>
+          </div>
+ <div hidden id="rezbl" class="appc">  
+<h4 class="razdel">
+        Ваша суточная норма калорий:
+        </h4>
+         <div class="rez">  
+  <p id="textrut" class="win"></p>
+        </div>
+<p id="textbig" class="razdel">калорий
+        </p>
+      </div>
+ <p class="content-main">Небольшая предыстория</p>
+        <p class="content-text">
+Формула Миффлина-Сан Жеора, разработанная группой американских врачей-диетологов под руководством докторов Миффлина и Сан Жеора, выдает необходимое количество килокалорий (ккал) в сутки для каждого конкретного человека.<br>
+
+Она была выведена в 2005 году и все чаще стала заменять классическую формулу Харриса-Бенедикта.
+</p>
+        <!--ads-->
+        <!--ads-->
+<p class="content-main">Формула Миффлина-Сан Жеора</p>
+<p class="content-text">
+ 1. Сначала рассчитывается величина основного обмена веществ (ВОО) по формуля для мужчин и для женщин</p><p class="content-text"><br>Обозначения в формулах: 
+</p>
+        <ul>
+          <li>m - вес (кг)</li>
+ <li>h - рост (см)</li>
+<li>a - возраст (лет)</li>
+ <li>k - коэффициент физической нагрузки</li>
+        </ul>
+<p class="content-text"><br>
+  Формула для женщин:<br><strong>ВОО = 10*m + 6.25*h - 5*a - 161</strong><br><br>
+  Формула для мужчин:<br><strong>ВОО = 10*m + 6.25*h - 5*a + 5</strong><br><br></p>
+        <p class="content-text">
+ 2. После расчета ВОО можно расчитать необходимое количество калорий. Для этого нужно учесть коэффициент физической нагрузки (k):
+</p>
+<p class="content-text">
+ <strong>Норма калорий = k*ВОО</strong><br><br></p>
+   <!--ads-->
+        <p class="fig"><img src="styles/images/scale.png" 
+   width="40%" alt="Весы"></p>
+        <hr class="hr-circle">
+      </div>
+    </div>
+    
+   <footer>
+&copy; All rights reserved <strong>MikhaelLEE</strong> 2020
+</footer>
+  </body>
+</html>
+ 
