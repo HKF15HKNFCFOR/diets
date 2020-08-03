@@ -1,0 +1,341 @@
+
+html, body {
+    padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #a6ffef;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+h1{
+text-align: center;
+}
+.main{
+  min-height: 100%;
+min-width: 100%;
+background: url(images/strawberry.png) repeat-y 5% 0%, 
+                #a6ffef url(images/strawberry.png) repeat-y 95% 0%;
+  background-size: 10%;
+   padding-top:0px;
+}
+.all{
+  margin: 0 15%;
+  padding: 1%;
+  
+}
+.one {
+  padding: 50px 20px;
+  text-align: center;
+}
+.one h1 {
+  font-family: 'Courier New';
+  position: relative;
+  color: #3CA1D9; 
+  display: inline-block;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  font-size: 3em;
+  padding: 11px 60px;
+  margin: 0; 
+  line-height: 1;
+}
+.one h1:before, .one h1:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  background: repeating-linear-gradient(180deg, transparent, transparent 2px, #3CA1D9 2px, #3CA1D9 4px);
+}
+.one h1:before {left: 0;}
+.one h1:after {right: 0;}
+@media (max-width: 420px) {
+  .one h1 {font-size: 2em;}
+}
+.textm{
+  font-size:3vw;
+  color: #754722;
+  text-align: justify;
+}
+
+.razdel{
+  font-size:4vw;
+  color: #5f3f7e;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 25px;
+font-weight: bold;
+}
+.appname{
+  font-size:2vw;
+  color: #b66e35;
+  text-align: left;
+  margin: 10px;
+  margin-bottom: 35px;
+font-weight: bold;
+}
+.content-text{
+  font-size:2vw;
+  color: #421b0b;
+  text-align: justify;
+  text-indent: 20px; 
+}
+.content-main{
+  font-size:3vw;
+  color: #3698c9;
+  text-align: left;
+  font-weight: bold;
+  margin-top:10px;
+}
+.content-special{
+  font-size:1.7vw;
+  color: #005de2;
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 20px;
+}
+.hr-circle {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-width: 0 0 5px;
+	border-style: solid;
+	border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="#3698c9" cx="1" cy="0.5" r="0.5"></circle></svg>') 0 0 100% repeat;
+	background-position: 50%;
+	box-sizing: border-box;
+	color: #3698c9;
+}
+footer {
+font-size: 1.1rem;
+    position: relative; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    color: black; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    padding: 10px; /* Поля вокруг текста */
+    background: rgba(255,255,255,.86); /* Цвет фона */
+  text-align: center;
+   }
+
+.menu {
+	width: 100%;
+	display: table;
+  padding-bottom:20px;
+}
+.menu ul {
+	display: table-row;
+}
+.menu li {
+	display: table-cell;
+	position: relative;
+	background: #2767A0;
+  font-size: 2vw;
+}
+.menu li a {
+	display: block;
+	padding: 20px 20px;
+	color: #fff;
+	text-align: center;
+text-decoration: none;
+font-weight: bold;
+}
+.menu-caret:after {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: .255em;
+	vertical-align: .255em;
+	content: "";
+	border-top: 3px solid;
+	border-right: 3px solid transparent;
+	border-bottom: 0;
+	border-left: 3px solid transparent;
+}
+.menu ul li:hover, .menu a:hover {
+	background: #666;
+}
+.menu li:hover ul  {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background: #666;
+	margin: 0;
+	padding: 10px 20px;
+	width: 150px;
+	z-index: 9999;
+}
+.menu ul ul  {
+	display: none;
+}
+.menu ul ul li  {
+	display: block;
+	background: #666;
+	padding: 5px 0;
+}
+.menu ul ul li a  {
+	display: block;
+	padding: 0;
+	background: #666;
+	text-align: left;
+}
+
+ul {
+    list-style-image: url(images/carrot_small.png); 
+  margin-left: 30px;
+}
+ li {
+    padding-left: 17 px;
+   margin-top: 10px;
+font-size:2vw;
+  color: #005d27;
+  text-align: justify;
+   }
+
+ol {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 0 0 0 45px;
+	padding: 15px 0 5px 0;
+	font-size: 2vw;
+}
+ol li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
+	line-height: 1.4;
+}
+ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -38px;
+	width: 22px;
+	height: 22px;
+	background: #005d27;
+	color: #fff;
+	text-align: center;
+	line-height: 22px;
+	font-size: 1.5vw;
+  
+}
+.application{
+display:inline-block;
+  width:100%;
+  background: #fff;
+         padding: 32px;
+         border-radius: 10px; 
+         box-shadow: 0 4px 16px #ccc; 
+         font-family: sans-serif; 
+         letter-spacing: 1px; 
+  margin: 20px 0;
+  
+  
+}
+.appl{
+  height: auto;
+  width: auto;
+  float:left;
+}
+
+.appc{
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+.rez{ 
+font-size:4vw;
+  height: 4em;
+  width: 4em;
+  margin: 10% auto;
+  text-align: center;
+}
+.win{
+  background: #85dea3;
+font-size:4vw;
+  color: white;
+  font-weight: bold;
+   text-align: center;
+  height: 4em;  /* не в % */
+  line-height: 4em;
+border-radius: 7%; 
+}
+
+input {
+	width: 100px;
+	font-size: 1.7vw;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+border-radius: 8px;
+margin: 2.5px 5px;
+}
+button.button7 {
+  font-size: 2vw;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+button.button7:hover { background: rgb(53, 167, 110); }
+button.button7:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+text-align: left;
+ margin: 20px auto;
+border-collapse: separate;
+border-spacing: 5px;
+background: #ffe3b4;
+color: #005d27;
+border: 16px solid #ffe3b4;
+border-radius: 20px;
+
+}
+th {
+font-size: 1.7vw;
+padding: 10px;
+  text-align: center;
+}
+td {
+background: white;
+padding: 10px;
+  color:#005d27;
+  font-size: 2vw;
+text-align: center;
+}
+select {
+
+
+border: solid 2px #85dea3;
+
+outline: 0;
+  
+background: white;
+
+
+
+margin: 2.5px 5px;
+
+width:auto;
+  font-size: 1.7vw;
+
+}
+.fig {
+    text-align: center; /* Выравнивание по центру */ 
+   }

@@ -1,0 +1,233 @@
+
+html, body {
+    padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #a6ffef;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+h1{
+text-align: center;
+}
+.main{
+  min-height: 100%;
+min-width: 100%;
+background: url(images/orange.png) repeat-y 5% 0%, 
+                #a6ffef url(images/orange.png) repeat-y 95% 0%;
+  background-size: 10%;
+   padding-top:0px;
+}
+.all{
+  margin: 0 15%;
+  padding: 1%;
+}
+.one {
+  padding: 50px 20px;
+  text-align: center;
+}
+.one h1 {
+  font-family: 'Courier New';
+  position: relative;
+  color: #3CA1D9; 
+  display: inline-block;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  font-size: 3em;
+  padding: 11px 60px;
+  margin: 0; 
+  line-height: 1;
+}
+.one h1:before, .one h1:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  background: repeating-linear-gradient(180deg, transparent, transparent 2px, #3CA1D9 2px, #3CA1D9 4px);
+}
+.one h1:before {left: 0;}
+.one h1:after {right: 0;}
+@media (max-width: 420px) {
+  .one h1 {font-size: 2em;}
+}
+.textm{
+  font-size:3vw;
+  color: #754722;
+  text-align: center;
+}
+
+.razdel{
+  font-size:4vw;
+  color: #5f3f7e;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 25px;
+font-weight: bold;
+}
+.diet{
+  font-size:4vw;
+  color: #b66e35;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 35px;
+font-weight: bold;
+}
+.content-text{
+  font-size:2vw;
+  color: #005d27;
+  text-align: justify;
+  text-indent: 20px; 
+}
+.content-main{
+  font-size:3vw;
+  color: #3698c9;
+  text-align: left;
+  font-weight: bold;
+  margin: 10px;
+}
+.content-special{
+  font-size:2.5vw;
+  color: #5f3f7e;
+  text-align: left;
+  font-weight: bold;
+  margin: 20px;
+}
+.hr-circle {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-width: 0 0 5px;
+	border-style: solid;
+	border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="orange" cx="1" cy="0.5" r="0.5"></circle></svg>') 0 0 100% repeat;
+	background-position: 50%;
+	box-sizing: border-box;
+	color: orange;
+}
+footer {
+font-size: 1.1rem;
+    position: relative; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    color: black; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    padding: 10px; /* Поля вокруг текста */
+    background: rgba(255,255,255,.86); /* Цвет фона */
+  text-align: center;
+   }
+
+.menu {
+	width: 100%;
+	display: table;
+  padding-bottom:20px;
+}
+.menu ul {
+	display: table-row;
+}
+.menu li {
+	display: table-cell;
+	position: relative;
+	background: #2767A0;
+  font-size: 2vw;
+}
+.menu li a {
+	display: block;
+	padding: 20px 20px;
+	color: #fff;
+	text-align: center;
+text-decoration: none;
+font-weight: bold;
+}
+.menu-caret:after {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: .255em;
+	vertical-align: .255em;
+	content: "";
+	border-top: 3px solid;
+	border-right: 3px solid transparent;
+	border-bottom: 0;
+	border-left: 3px solid transparent;
+}
+.menu ul li:hover, .menu a:hover {
+	background: #666;
+}
+.menu li:hover ul  {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background: #666;
+	margin: 0;
+	padding: 10px 20px;
+	width: 150px;
+	z-index: 9999;
+}
+.menu ul ul  {
+	display: none;
+}
+.menu ul ul li  {
+	display: block;
+	background: #666;
+	padding: 5px 0;
+}
+.menu ul ul li a  {
+	display: block;
+	padding: 0;
+	background: #666;
+	text-align: left;
+}
+
+ul {
+    list-style-image: url(images/carrot_small.png); 
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+ li {
+    padding-left: 17 px;
+   margin-top: 10px;
+font-size:2vw;
+  color: #005d27;
+  text-align: justify;
+   }
+
+ol {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 0 0 0 45px;
+	padding: 15px 0 5px 0;
+	font-size: 2vw;
+}
+ol li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
+	line-height: 1.4;
+}
+ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -38px;
+	width: 22px;
+	height: 22px;
+	background: #005d27;
+	color: #fff;
+	text-align: center;
+	line-height: 22px;
+	font-size: 1.5vw;
+  
+}
+.fig {
+    text-align: center; /* Выравнивание по центру */ 
+   }
