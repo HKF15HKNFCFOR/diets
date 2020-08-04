@@ -209,7 +209,15 @@ ul {
     list-style-image: url(images/carrot_small.png); 
   margin-left: 30px;
 }
- li {
+ ul li {
+    padding-left: 17 px;
+   margin-top: 10px;
+font-size:2vw;
+  color: #005d27;
+  text-align: justify;
+	font-weight:bold;
+   }
+li {
     padding-left: 17 px;
    margin-top: 10px;
 font-size:2vw;
