@@ -284,4 +284,5 @@ text-align: left;
 }
 .fig {
     text-align: center; /* Выравнивание по центру */ 
+	width: 60%;
    }
